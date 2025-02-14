@@ -1,0 +1,6 @@
+.nav-links {
+    flex-grow: 1; /* Allows it to take up the available space */
+    display: flex;
+    justify-content: center; /* Center align items */
+    gap: 16px; /* Space between buttons */
+  }
