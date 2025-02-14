@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 
 @Component({
@@ -6,7 +6,6 @@ import {MatCardModule} from '@angular/material/card';
   imports: [MatCardModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent {
   name: string = "Gong (Victor) Feng";
