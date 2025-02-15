@@ -1,0 +1,30 @@
+.overview {
+    max-width: 350px;
+    min-width: 350px;
+    text-align: center;
+}
+
+.actions {
+    justify-content: center;
+}
+
+.card-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #ccc;
+}
+
+.tag {
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+    margin-inline-end: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
