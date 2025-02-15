@@ -1,0 +1,36 @@
+.overview {
+    max-width: 1640px;
+    margin: 20px auto; /* Centers the grid horizontally */
+  }
+
+.big-card {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+.header {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+  }
+
+.header mat-card-title {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+
+.rounded-image {
+  width: 256px; 
+  height: 256px; 
+  border-radius: 50%; /* Makes it a perfect circle */
+  object-fit: cover; /* Ensures the image fills the circle */
+  border: 4px solid #ccc; 
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
