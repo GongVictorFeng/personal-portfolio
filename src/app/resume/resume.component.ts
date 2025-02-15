@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-resume',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './resume.component.scss'
 })
 export class ResumeComponent {
-
+    constructor(private titleService: Title) {
+      this.titleService.setTitle('Gong(Victor) Feng - Resume')
+    }
 }
