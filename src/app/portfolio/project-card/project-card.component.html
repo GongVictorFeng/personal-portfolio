@@ -1,11 +1,12 @@
 <mat-card class="overview">
-    <mat-card-title>Sample Project</mat-card-title>
-    <mat-card-content>This is the sample project for demonstration purpose</mat-card-content>
+    <mat-card-title>{{project.name}}</mat-card-title>
+    <mat-card-content>{{project.summary}}</mat-card-content>
     <mat-card-actions class="actions">
         <button mat-button color="primary">View More</button>
     </mat-card-actions>
     <mat-card-footer class="card-footer">
-        <div class="tag">Angular</div>
-        <div class="tag">TypeScript</div>
+        <div *ngFor="let tag of project.tags">
+            <div class="tag">{{tag}}</div>
+        </div>
     </mat-card-footer>
 </mat-card>
