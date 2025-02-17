@@ -1,0 +1,19 @@
+<mat-card class="overview">
+    <mat-card-header class="header">
+        <mat-card-title>
+            <h2>{{project.name}}</h2>
+        </mat-card-title>
+    </mat-card-header>
+    <img  mat-card-image src={{project.picture}} alt="project image">
+    <mat-card-content class="content">
+        <h3>Description</h3>
+        <p>{{project.description}}</p>
+        <p *ngIf="project.url">Demo: <a href={{project.url}}>here</a></p>
+        <p>You can find this project on Github: <a href={{project.projectLink}} target="_blank">here</a></p>
+    </mat-card-content>
+    <mat-card-footer class="card-footer">
+        <div *ngFor="let tag of project.tags">
+            <div class="tag" [style.background-color]="tag.color">{{tag}}</div>
+        </div>
+    </mat-card-footer>
+</mat-card>
