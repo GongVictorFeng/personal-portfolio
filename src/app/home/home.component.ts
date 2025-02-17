@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import { Project } from '../models/Project';
+import { ProjectService } from '../services/project.service';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +14,14 @@ import {MatCardModule} from '@angular/material/card';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-    constructor(private titleService: Title) {
+  featureProject = {} as Project;
+
+    constructor(private titleService: Title, private projectService: ProjectService) {
       this.titleService.setTitle('Gong(Victor) Feng - Home')
     }
+  ngOnInit(): void {
+    this.featureProject = this.projectService.getProjectById(0);
+  }
 }
