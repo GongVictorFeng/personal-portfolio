@@ -1,3 +1,6 @@
-<div>
-    <app-project-card></app-project-card>
-</div>
+<mat-grid-list cols="3" rowHeight="200px" gutterSize="30px" class="overview">
+    <mat-grid-tile>
+        <app-project-card [project]="project"></app-project-card>
+    </mat-grid-tile>
+</mat-grid-list>
+    
