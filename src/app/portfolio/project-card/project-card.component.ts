@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import {MatChipsModule} from '@angular/material/chips';
-import { Project } from '../../_models/Project';
+import { Project } from '../../models/Project';
 import { CommonModule } from '@angular/common';
 
 @Component({
