@@ -30,4 +30,26 @@ export class ProjectService {
     return project;
   }
 
+  getProjectsByFilter(filterTags: Tag[]): Project[] {
+    const filterProjects: Project[] = [];
+
+    this.projects.forEach(
+      (project) => {
+        let foundAll: boolean = true;
+        filterTags.forEach(
+          (tag)  => {
+            if(project.tags.includes(tag) === false){
+              foundAll = false;
+            }
+          }
+        )
+
+        if (foundAll){
+          filterProjects.push(project);
+        }
+      }
+    )
+
+    return filterProjects;
+  }
 }
