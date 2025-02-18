@@ -9,16 +9,13 @@
                 <!-- Left Side: Languages -->
                 <div class="filter-section">
                   <h3>Languages</h3>
-                  <mat-checkbox *ngFor="let LanguageFilter of languages" [(ngModel)]="filters[LanguageFilter.key]" (change)="onFilter()">{{LanguageFilter.label}}</mat-checkbox>
+                  <mat-checkbox *ngFor="let LanguageFilter of languages" [(ngModel)]="filters[LanguageFilter.key]" (change)="onFilter()">{{LanguageFilter.key}}</mat-checkbox>
                 </div>
           
                 <!-- Right Side: Frameworks -->
                 <div class="filter-section">
                   <h3>Frameworks</h3>
-                  <mat-checkbox >Angular</mat-checkbox>
-                  <mat-checkbox >React</mat-checkbox>
-                  <mat-checkbox >Spring Boot</mat-checkbox>
-                  <mat-checkbox >.NET</mat-checkbox>
+                  <mat-checkbox *ngFor="let frameworkFilter of frameworks" [(ngModel)]="filters[frameworkFilter.key]" (change)="onFilter()">{{frameworkFilter.key}}</mat-checkbox>
                 </div>
               </div>
             </mat-card-content>

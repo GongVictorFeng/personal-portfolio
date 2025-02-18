@@ -29,22 +29,23 @@ export class PortfolioComponent implements OnInit {
 
   projects = {} as Project[];
   isCollapsed: boolean = true;
+  
   // Define filters object
   filters: { [key: string]: boolean } = {};
   languages = [
-    { key: 'java', label: 'Java' },
-    { key: 'typescript', label: 'TypeScript' },
-    { key: 'csharp', label: 'C#' },
-    { key: 'python', label: 'Python' },
-    { key: 'javascript', label: 'JavaScript' }
+    Tag.JAVA,
+    Tag.TYPESCRIPT,
+    Tag.CSHARP,
+    Tag.PYTHON,
+    Tag.JAVASCRIPT
   ];
 
   // Define frameworks dynamically
   frameworks = [
-    { key: 'angular', label: 'Angular' },
-    { key: 'react', label: 'React' },
-    { key: 'spring', label: 'Spring Boot' },
-    { key: 'dotnet', label: '.NET' }
+    Tag.ANGULAR,
+    Tag.REACT,
+    Tag.ASPNET,
+    Tag.NODEJS
   ];
   
   constructor(private titleService: Title, private projectService: ProjectService) {
@@ -61,9 +62,22 @@ export class PortfolioComponent implements OnInit {
   onFilter() {
     const filterTag: Tag[] = [];
     
-    if (this.filters['typescript']) {
-      filterTag.push(Tag.TYPESCRIPT)
-    }
+    this.languages.forEach(
+      (lang) => {
+        if (this.filters[lang.key]){
+          filterTag.push(lang);
+        }
+      }
+    )
+
+    this.frameworks.forEach(
+      (frame) => {
+        if (this.filters[frame.key]){
+          filterTag.push(frame);
+        }
+      }
+    )
+
     this.projects = this.projectService.getProjectsByFilter(filterTag)
   }
 }
