@@ -1,3 +1,100 @@
 <div class="overview">
     <button mat-flat-button (click)="onDownload()">Download PDF Resume</button>
+    <cdk-accordion class="example-accordion">
+        <cdk-accordion-item #accordionItem1="cdkAccordionItem" class="example-accordion-item first-accordion-item">
+            <button 
+            (click)="accordionItem1.toggle()" 
+            [attr.aria-expanded]="accordionItem1.expanded"
+            class="example-accordion-item-header"
+            >
+                Work Experience
+                <span class="example-accordion-item-description">
+                    Click to {{ accordionItem1.expanded ? 'close' : 'open' }}
+                </span>
+            </button>
+
+            @if(accordionItem1.expanded) {
+                <div class="accordion-content">
+                    <h3>Full Stack Developer Co-op - Canada Revenue Agency</h3>
+                    <em>Criminal Investigation and Integration Services Team</em>
+                    <p>May 2024 - Dec 2024</p>
+                    <ul>
+                        <li>Contributed to the migration of CRA&#39;s auditor <b>desktop software</b> to a <b>web-based application</b>, enhancing accessibility and modernizing the user experience.</li>
+                        <li>Developed responsive user interface using <b>Angular</b> and implemented <b>RxJS</b> observables for seamless frontend data communication.</li>
+                        <li>Designed and built <b>REST API layers</b> for efficient data retrieval, integrating with complex backend systems.</li>
+                        <li>Modified server-side domain logic to align with evolving business rules and ensured integration of diverse data sources.</li>
+                        <li>Implemented comprehensive <b>end-to-end tests</b> using <b>Playwright</b> to validate user workflows and application functionality.</li>
+                    </ul>
+
+                    <h3>Software Developer Co-op - Magnet Forensics</h3>
+                    <em>Artifacts Mobile Team</em>
+                    <p>May 2023 - Aug 2023</p>
+                    <ul>
+                        <li>Collaborated to the development and enhancement of <b>Magnet AXIOM</b>, Magnet Forensics’ flagship, by implementing new features and optimizing data identification, extraction, recovery process</li>
+                        <li>Defined artifact schemas and implemented data parsers and “hunters” to extract information from various sources, utilizing <b>SQLite, Protocol Buffers, and FlatBuffers</b>.</li>
+                        <li>Developed and executed <b>unit tests</b> using <b>Moq</b> to validate helper and converter classes.</li>
+                    </ul>
+
+                    <h3>Software Developer in Test Co-op - Nokia</h3>
+                    <em>Netguard Cybersecurity Dome Team</em>
+                    <p>Sep 2022 - Dec 2022</p>
+                    <ul>
+                        <li>Collaborated in a team of interns to enhance product quality by developing <b>integration and end-to-end tests</b> using <b>Robot Framework (Python, Selenium)</b>.</li>
+                        <li>Configured and optimized test stages in the <b>GitLab CI/CD pipeline</b> to automatically test result uploads to Jira and integrate with <b>Xray Test Management</b> for improving tracking of testing metrics and KPIs.</li>
+                        <li>Worked cross-functionally with <b>Dev, DevOps, Infra, ML</b> teams to understand service functionalities and deploy them for testing including <b>GraphQL, credential management</b>.</li>
+                    </ul>
+                </div>
+            }
+        </cdk-accordion-item>
+
+        <cdk-accordion-item #accordionItem2="cdkAccordionItem" class="example-accordion-item">
+            <button 
+            (click)="accordionItem2.toggle()" 
+            [attr.aria-expanded]="accordionItem2.expanded"
+            class="example-accordion-item-header"
+            >
+                Education
+                <span class="example-accordion-item-description">
+                    Click to {{ accordionItem2.expanded ? 'close' : 'open' }}
+                </span>
+            </button>
+
+            @if(accordionItem2.expanded) {
+                <div class="accordion-content">
+                    <h3>Bachelor of Applied Science - Software Engineering (COOP)</h3>
+                    <em>University Of Ottawa - Ottawa, ON.</em>
+                    <p>Sep 2020 - Dec 2024</p>
+                    <ul>
+                        <li><b>Highlight: CGPA: 9.49/10; Recognized on the Dean&#39;s Honor List every term.</b></li>
+                    </ul>
+                </div>
+            }
+        </cdk-accordion-item>
+
+        <cdk-accordion-item #accordionItem3="cdkAccordionItem" class="example-accordion-item last-accordion-item">
+            <button 
+            (click)="accordionItem3.toggle()" 
+            [attr.aria-expanded]="accordionItem3.expanded"
+            class="example-accordion-item-header"
+            >
+                Skills
+                <span class="example-accordion-item-description">
+                    Click to {{ accordionItem2.expanded ? 'close' : 'open' }}
+                </span>
+            </button>
+
+            @if(accordionItem3.expanded) {
+                <div class="accordion-content">
+                    <h3>Programming Languages</h3>
+                    <p>Java, C#, JavaScript, TypeScript, C, C++, Python, SQL, HTML/CSS, Kotlin.</p>
+
+                    <h3>Frameworks & Libraries</h3>
+                    <p>Angular, React, Spring Boot, Android Studio, Junit, xUnit, Moq, GraphQL, FirebaseDB, MySQL.</p>
+
+                    <h3>Tools & Technologies</h3>
+                    <p>Docker, Kubernetes, Git, CI/CD, REST, GraphQL</p>
+                </div>
+            }
+        </cdk-accordion-item>
+    </cdk-accordion>
 </div>

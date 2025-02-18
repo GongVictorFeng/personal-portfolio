@@ -1,11 +1,13 @@
 import { Component, Renderer2 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { Title } from '@angular/platform-browser';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
 @Component({
   selector: 'app-resume',
   imports: [
     MatButtonModule,
+    CdkAccordionModule
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
