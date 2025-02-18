@@ -9,7 +9,7 @@ export class Tag {
     static readonly JAVASCRIPT = new Tag("JavaScript", "grey");
     static readonly REACT = new Tag("React", "blue");
 
-    constructor(private readonly key: string, public readonly color: string ) {}
+    constructor(public readonly key: string, public readonly color: string ) {}
 
     toString() {
         return this.key;
