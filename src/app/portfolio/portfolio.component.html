@@ -1,6 +1,35 @@
-<mat-grid-list cols="3" rowHeight="200px" gutterSize="30px" class="overview">
-    <mat-grid-tile *ngFor="let project of projects">
-        <app-project-card [project]="project"></app-project-card>
-    </mat-grid-tile>
-</mat-grid-list>
+<div class="overview">
+    <button mat-flat-button (click)="isCollapsed = !isCollapsed">Filter</button>
+
+    <div *ngIf="!isCollapsed" class="filter-card">
+        <mat-card>
+            <mat-card-title>Filter Options</mat-card-title>
+            <mat-card-content>
+              <div class="filter-container">
+                <!-- Left Side: Languages -->
+                <div class="filter-section">
+                  <h3>Languages</h3>
+                  <mat-checkbox *ngFor="let LanguageFilter of languages" [(ngModel)]="filters[LanguageFilter.key]" (change)="onFilter()">{{LanguageFilter.label}}</mat-checkbox>
+                </div>
+          
+                <!-- Right Side: Frameworks -->
+                <div class="filter-section">
+                  <h3>Frameworks</h3>
+                  <mat-checkbox >Angular</mat-checkbox>
+                  <mat-checkbox >React</mat-checkbox>
+                  <mat-checkbox >Spring Boot</mat-checkbox>
+                  <mat-checkbox >.NET</mat-checkbox>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card> 
+    </div>
+    <mat-grid-list cols="3" rowHeight="200px" gutterSize="30px">
+        <mat-grid-tile *ngFor="let project of projects">
+            <app-project-card [project]="project"></app-project-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+
+</div>
     
