@@ -1,4 +1,4 @@
-<mat-grid-list cols="2" rowHeight="50vh" gutterSize="10px" class="overview">
+<mat-grid-list cols="2" rowHeight="65vh" gutterSize="10px" class="overview">
     <mat-grid-tile colspan="1">
       <mat-card class="big-card">
         <mat-card-header class="header">
@@ -16,7 +16,12 @@
         <mat-card-header class="header">
           <mat-card-title>Feature Project</mat-card-title>
         </mat-card-header>
-        <mat-card-content>{{featureProject.name}}</mat-card-content>
+        <p class="header">{{featureProject.name}}</p>
+        <img  mat-card-image src={{featureProject.picture}} alt="project image">
+        <mat-card-content>
+          <p>{{featureProject.summary}}</p>
+          <p>Visit the Portfolio section to learn more</p>
+        </mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
