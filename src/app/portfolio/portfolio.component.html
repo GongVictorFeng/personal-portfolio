@@ -1,5 +1,6 @@
 <div class="overview">
     <button mat-flat-button (click)="isCollapsed = !isCollapsed">Filter</button>
+    <button mat-flat-button *ngIf="isFiltered"  (click)="onReset()">Reset</button>
 
     <div *ngIf="!isCollapsed" class="filter-card">
         <mat-card>
@@ -26,7 +27,5 @@
             <app-project-card [project]="project"></app-project-card>
         </mat-grid-tile>
     </mat-grid-list>
-
-
 </div>
     

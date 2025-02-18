@@ -29,7 +29,8 @@ export class PortfolioComponent implements OnInit {
 
   projects = {} as Project[];
   isCollapsed: boolean = true;
-  
+  isFiltered: boolean = false;
+
   // Define filters object
   filters: { [key: string]: boolean } = {};
   languages = [
@@ -60,24 +61,26 @@ export class PortfolioComponent implements OnInit {
   }
 
   onFilter() {
-    const filterTag: Tag[] = [];
-    
-    this.languages.forEach(
-      (lang) => {
-        if (this.filters[lang.key]){
-          filterTag.push(lang);
+    const filterTags: Tag[] = [];
+
+    [...this.languages, ...this.frameworks].forEach(
+      (tag) => {
+        if (this.filters[tag.key]) {
+          filterTags.push(tag);
         }
       }
     )
 
-    this.frameworks.forEach(
-      (frame) => {
-        if (this.filters[frame.key]){
-          filterTag.push(frame);
-        }
-      }
-    )
+    this.isFiltered = filterTags.length === 0 ? false : true;
+    this.projects = this.projectService.getProjectsByFilter(filterTags)
+  }
 
-    this.projects = this.projectService.getProjectsByFilter(filterTag)
+  onReset() {
+    [...this.languages, ...this.frameworks].forEach(item => {
+      this.filters[item.key] = false;
+    });
+
+    this.projects = this.projectService.getProjects();
+    this.isFiltered = false;
   }
 }
