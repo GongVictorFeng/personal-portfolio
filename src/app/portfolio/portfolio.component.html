@@ -22,7 +22,7 @@
             </mat-card-content>
           </mat-card> 
     </div>
-    <mat-grid-list cols="3" rowHeight="200px" gutterSize="30px">
+    <mat-grid-list [cols]="cols" [rowHeight]="rowHeight" gutterSize="30px">
         <mat-grid-tile *ngFor="let project of projects">
             <app-project-card [project]="project"></app-project-card>
         </mat-grid-tile>
