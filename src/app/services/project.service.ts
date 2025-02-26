@@ -8,15 +8,59 @@ import { Tag } from '../models/Tag';
 export class ProjectService {
 
     projects: Project[] = [
-      {id: 0, name: "Sample Python Project", picture: "../../assets/image1.png", projectLink: "//www.github.com", url: "", summary: "Python project that analyzes stock market data.", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.PYTHON]},
-      {id: 1, name: "Sample Angular App", picture: "../../assets/image1.png", projectLink: "//www.github.com", url: "", summary: "Fullstack web app developed using Angular and Node.JS", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.NODEJS]},
-      {id: 2, name: "Sample .Net App", picture: "../../assets/image1.png", projectLink: "//www.github.com", url: "", summary: "Fullstack web app developed using React and ASP.NET", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.REACT ,Tag.CSHARP, Tag.ASPNET]},
-      {id: 3, name: "Web API Project", picture: "../../assets/image1.png", projectLink: "//www.github.com", url: "", summary: "Web API Project that was developed for a class project.", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.CSHARP, Tag.ASPNET]},
-      {id: 4, name: "Chrome Extension", picture: "../../assets/image1.png", projectLink: "//www.github.com", url: "", summary: "Developed a chrome extension that tracks the prices of furniture.", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.JAVASCRIPT]},
-      {id: 5, name: "Mobile App", picture: "../../assets/image1.png", projectLink: "//www.github.com", url: "", summary: "Mobile app developed in java that tracks the departure and arrival of trains.", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", tags: [Tag.JAVA]}
+      {
+       id: 0, 
+       name: "Course Register System", 
+       picture: "../../assets/angular_material.png", 
+       projectLink: "https://github.com/GongVictorFeng/course_register?tab=readme-ov-file",
+       url: " https://course-register-e5ab4.web.app",   
+       summary: "A web application for course registration that allows instructors to manage courses.", 
+       description: "A web application for course registration, I created it to explore the Angular Material components, the repo is updated to Angular 19, all components are standalone components. I have already deployed this app on Firebase, will add more features in the future, because it can be easily extented to a full stack application.", 
+       tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.NODEJS]
+      },
+      { 
+        id: 1, 
+        name: "Personal Portfolio", 
+        picture: "../../assets/home_page.png", 
+        projectLink: "https://github.com/GongVictorFeng/personal-portfolio",
+        url: " https://course-register-e5ab4.web.app",   
+        summary: "A personal wesite to showcase the projects, resume and contact.", 
+        description: "A personal website to showcase the projects, there are four pages, Home, Projects, Resume and Contact. The Home page is the landing page, it has a brief introduction of myself, the Projects page shows all the projects I have done, the Resume page shows my resume, and the Contact page has a contact form. I used Angular Material to create the UI, and deployed it on Firebase.", 
+        tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.NODEJS]
+       },
+       {
+        id: 2, 
+        name: "Course Register Server", 
+        picture: "../../assets/course_register_server.png", 
+        projectLink: "https://github.com/GongVictorFeng/course_register_server",
+        url: "",   
+        summary: "A web service involving several apis for the project course register system to retrieve data.", 
+        description: "A very simple web service involving serveral apis for the project course register system to retrieve data. I used Node.js and Express to create the server. The server is deployed on Render. The server is used to retrieve data for the course register system, such as courses and lessons.", 
+        tags: [Tag.JAVASCRIPT, Tag.NODEJS]
+       },
+       {
+        id: 3, 
+        name: "Patient Management System", 
+        picture: "../../assets/patient_management_system.png", 
+        projectLink: "https://github.com/GongVictorFeng/PatientManagementSystem",
+        url: "https://drive.google.com/file/d/1tfZ0PT_y667y2jh1rs-iNvEB0Ng3u3yY/view",   
+        summary: "A full stack application developed for the course - software design and architecture.", 
+        description: "A full stack application developed with 4 students in the course - software design and architecture. I designed the database, created the backend with Spring Boot, the backend follows the clean architecture: Domain layer contains the core business entities, Application layer contains the business logic and use cases, Adapter layer has converters to transfer data between domain and persistence layers, and infrastructure layer is to communicate with external resources. You can check the demo vdieo on the demo link",
+        tags: [Tag.REACT, Tag.NODEJS, Tag.KOTLIN, Tag.SPRINGBOOT]
+       },
+       {
+        id: 4, 
+        name: "Design Patterns", 
+        picture: "../../assets/design_patterns.png", 
+        projectLink: "https://github.com/GongVictorFeng/DesignPattern",
+        url: "",   
+        summary: "A project that I created to explore the design patterns and its implementation in C#.", 
+        description: "A project that I created to explore the design patterns and its implementation in C#. Currently I implemented 3 design patterns in C#, and it will keep updating . The project is a good resource for learning design patterns in C#.",
+        tags: [Tag.CSHARP, Tag.ASPNET]
+       }
     ];
     
-  constructor() { }
+  constructor() {}
 
   getProjects() {
     return this.projects;
