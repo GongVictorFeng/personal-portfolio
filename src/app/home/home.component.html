@@ -1,5 +1,5 @@
-<mat-grid-list cols="2" rowHeight="65vh" gutterSize="10px" class="overview">
-    <mat-grid-tile colspan="1">
+<mat-grid-list [cols]="cols" [rowHeight]="rowHeight" gutterSize="10px" class="overview">
+    <mat-grid-tile>
       <mat-card class="big-card">
         <mat-card-header class="header">
             <mat-card-title>About me</mat-card-title>
@@ -21,7 +21,7 @@
       </mat-card>
     </mat-grid-tile>
   
-    <mat-grid-tile colspan="1">
+    <mat-grid-tile>
       <mat-card class="big-card">
         <mat-card-header class="header">
           <mat-card-title>Feature Project</mat-card-title>
