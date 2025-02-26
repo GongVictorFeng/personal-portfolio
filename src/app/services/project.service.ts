@@ -23,7 +23,7 @@ export class ProjectService {
         name: "Personal Portfolio", 
         picture: "../../assets/home_page.png", 
         projectLink: "https://github.com/GongVictorFeng/personal-portfolio",
-        url: " https://course-register-e5ab4.web.app",   
+        url: "https://personal-portfolio-a67e2.web.app",   
         summary: "A personal wesite to showcase the projects, resume and contact.", 
         description: "A personal website to showcase the projects, there are four pages, Home, Projects, Resume and Contact. The Home page is the landing page, it has a brief introduction of myself, the Projects page shows all the projects I have done, the Resume page shows my resume, and the Contact page has a contact form. I used Angular Material to create the UI, and deployed it on Firebase.", 
         tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.NODEJS]
