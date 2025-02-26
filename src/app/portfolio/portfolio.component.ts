@@ -42,7 +42,8 @@ export class PortfolioComponent implements OnInit {
     Tag.TYPESCRIPT,
     Tag.CSHARP,
     Tag.PYTHON,
-    Tag.JAVASCRIPT
+    Tag.JAVASCRIPT,
+    Tag.KOTLIN
   ];
 
   // Define frameworks dynamically
@@ -50,7 +51,8 @@ export class PortfolioComponent implements OnInit {
     Tag.ANGULAR,
     Tag.REACT,
     Tag.ASPNET,
-    Tag.NODEJS
+    Tag.NODEJS,
+    Tag.SPRINGBOOT
   ];
   
   constructor(private titleService: Title, private projectService: ProjectService, private responsive: BreakpointObserver) {
