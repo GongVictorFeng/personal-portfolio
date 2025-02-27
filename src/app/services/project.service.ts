@@ -13,7 +13,7 @@ export class ProjectService {
        name: "Course Register System", 
        picture: "../../assets/angular_material.png", 
        projectLink: "https://github.com/GongVictorFeng/course_register?tab=readme-ov-file",
-       url: " https://course-register-e5ab4.web.app",   
+       url: "https://course-register-e5ab4.web.app",   
        summary: "A web application for course registration that allows instructors to manage courses.", 
        description: "A web application for course registration, I created it to explore the Angular Material components, the repo is updated to Angular 19, all components are standalone components. I have already deployed this app on Firebase, will add more features in the future, because it can be easily extented to a full stack application.", 
        tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.NODEJS]
@@ -24,7 +24,7 @@ export class ProjectService {
         picture: "../../assets/home_page.png", 
         projectLink: "https://github.com/GongVictorFeng/personal-portfolio",
         url: "https://personal-portfolio-a67e2.web.app",   
-        summary: "A personal wesite to showcase the projects, resume and contact.", 
+        summary: "A personal wesbite to showcase the projects, resume and contact.", 
         description: "A personal website to showcase the projects, there are four pages, Home, Projects, Resume and Contact. The Home page is the landing page, it has a brief introduction of myself, the Projects page shows all the projects I have done, the Resume page shows my resume, and the Contact page has a contact form. I used Angular Material to create the UI, and deployed it on Firebase.", 
         tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.NODEJS]
        },
