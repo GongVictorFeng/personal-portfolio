@@ -27,8 +27,17 @@ The application is visible at port 4200: [http://localhost:4200](http://localhos
 Note: **make sure to use command npm start and not ng serve, as npm start adds a couple extra options that are needed for our project **
 
 # Home Page: 
-The home page has two cards, the left one is for the brief introduction of the person, the right one is to show the feature project:
+The home page has two cards, the left one is for the brief introduction of the person, the right one is to show the feature project.
 ![alt text](src/assets/home_page.png)
 
 # Portfolio Page;
 The portfolio page contains a list of project cards, and it has a button to filter the projects using specific programing languages and frameworks.
+![alt text](src/assets/portfolio.png)
+
+# Resume Page:
+The resume page has a button to download my pdf resume, and the accordion to show different sections of my resume.
+![alt text](src/assets/resume.png)
+
+# Contact Page:
+The contact page contains the information to reach out to me.
+![alt text](src/assets/contact.png)
