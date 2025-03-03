@@ -50,6 +50,16 @@ export class ProjectService {
        },
        {
         id: 4, 
+        name: "Angular Signal", 
+        picture: "../../assets/angular_signal.png", 
+        projectLink: "https://github.com/GongVictorFeng/Angular_Signal",
+        url: "",   
+        summary: "A project that I created to study and explore the angular signals.", 
+        description: "A project that I created to explore the angular signals. Since the RxJs is gradually becoming optional in Angular, so that leverage signals and minimize the RxJs would be a super interesting topic. This project is a small course register application that I try to build in signal style.",
+        tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.NODEJS]
+       },
+       {
+        id: 4, 
         name: "Design Patterns", 
         picture: "../../assets/design_patterns.png", 
         projectLink: "https://github.com/GongVictorFeng/DesignPattern",
@@ -57,6 +67,16 @@ export class ProjectService {
         summary: "A project that I created to explore the design patterns and its implementation in C#.", 
         description: "A project that I created to explore the design patterns and its implementation in C#. Currently I implemented 3 design patterns in C#, and it will keep updating . The project is a good resource for learning design patterns in C#.",
         tags: [Tag.CSHARP, Tag.ASPNET]
+       },
+       {
+        id: 5, 
+        name: "Data Structure and Algorithm", 
+        picture: "../../assets/data_structure_algorithm.png", 
+        projectLink: "https://github.com/GongVictorFeng/dataStructureAndAlgo",
+        url: "",   
+        summary: "A project that I created to study data structure and algorithm and its implementation in Java.", 
+        description: "A project that I created to study data structure and algorithm and its implementation in Java. I will solve a chunk of leetcode questions in Java. The project is a good resource for learning data structure and algorithm in Java.",
+        tags: [Tag.JAVA]
        }
     ];
     
