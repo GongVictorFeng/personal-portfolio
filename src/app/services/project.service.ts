@@ -99,6 +99,18 @@ export class ProjectService {
         'An educational repository demonstrating essential Spring Boot capabilities including: auto-configuration, starter projects, profiles for environment-specific configuration (dev/prod), Spring Boot Actuator for monitoring, and embedded servers. Includes practical implementations of dependency management, web application setup, and non-functional requirement handling. Serves as both a learning resource and template for production-grade Spring Boot applications.',
       tags: [Tag.JAVA, Tag.SPRINGBOOT],
     },
+    {
+      id: 8,
+      name: 'Spring Framework Core Concepts',
+      picture: '../../assets/spring-framework.png',
+      projectLink: 'https://github.com/GongVictorFeng/springframwork_intro',
+      url: '',
+      summary:
+        'Educational project demonstrating Spring Framework fundamentals through game implementation iterations.',
+      description:
+        "A hands-on exploration of Spring Framework's core principles featuring three progressive implementations: 1) Tightly-coupled architecture, 2) Interface-based loose coupling, and 3) Spring-managed dependency injection. Covers essential concepts like @Component, @Autowired, IoC container, component scanning, and dependency injection types. Includes practical examples of constructor-based vs setter-based injection and demonstrates how Spring simplifies complex application architecture by managing object lifecycles and dependencies.",
+      tags: [Tag.JAVA, Tag.SPRINGBOOT],
+    },
   ];
 
   constructor() {}
