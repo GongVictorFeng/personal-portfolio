@@ -111,6 +111,18 @@ export class ProjectService {
         "A hands-on exploration of Spring Framework's core principles featuring three progressive implementations: 1) Tightly-coupled architecture, 2) Interface-based loose coupling, and 3) Spring-managed dependency injection. Covers essential concepts like @Component, @Autowired, IoC container, component scanning, and dependency injection types. Includes practical examples of constructor-based vs setter-based injection and demonstrates how Spring simplifies complex application architecture by managing object lifecycles and dependencies.",
       tags: [Tag.JAVA, Tag.SPRINGBOOT],
     },
+    {
+      id: 9,
+      name: 'RESTful Social Media API',
+      picture: '../../assets/spring-rest.png',
+      projectLink: 'https://github.com/GongVictorFeng/restful-web-service',
+      url: '',
+      summary:
+        'Production-grade Spring Boot REST API implementing enterprise patterns and best practices.',
+      description:
+        'Social media backend API demonstrating: RESTful standards (HATEOAS, content negotiation), Spring Security, JPA/Hibernate integration, and OpenAPI documentation. Features advanced implementations of internationalization (i18n), dynamic response filtering, and API versioning strategies. Includes H2/MySQL database support and comprehensive error handling with proper HTTP status codes (400, 404, 500). Implements DispatcherServlet patterns and Jackson serialization configurations.',
+      tags: [Tag.JAVA, Tag.SPRINGBOOT],
+    },
   ];
 
   constructor() {}
