@@ -114,7 +114,7 @@ export class ProjectService {
     {
       id: 9,
       name: 'RESTful Social Media API',
-      picture: '../../assets/spring-rest.png',
+      picture: '../../assets/spirng-rest.png',
       projectLink: 'https://github.com/GongVictorFeng/restful-web-service',
       url: '',
       summary:
