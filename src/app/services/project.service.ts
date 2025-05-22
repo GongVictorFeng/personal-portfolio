@@ -123,6 +123,19 @@ export class ProjectService {
         'Social media backend API demonstrating: RESTful standards (HATEOAS, content negotiation), Spring Security, JPA/Hibernate integration, and OpenAPI documentation. Features advanced implementations of internationalization (i18n), dynamic response filtering, and API versioning strategies. Includes H2/MySQL database support and comprehensive error handling with proper HTTP status codes (400, 404, 500). Implements DispatcherServlet patterns and Jackson serialization configurations.',
       tags: [Tag.JAVA, Tag.SPRINGBOOT],
     },
+    {
+      id: 10,
+      name: 'Microservices with Spring Cloud',
+      picture: '../../assets/spring-cloud.png',
+      projectLink:
+        'https://github.com/GongVictorFeng/microservice-with-spring-cloud',
+      url: '',
+      summary:
+        'Spring Cloud-based microservices architecture implementing enterprise patterns.',
+      description:
+        'Comprehensive microservices implementation featuring: Spring Cloud Config (centralized configuration), Eureka service discovery, API Gateway with dynamic routing, and Resilience4j fault tolerance (Circuit Breaker, RateLimiter, Bulkhead). Demonstrates production-grade patterns including load balancing with Feign/RestTemplate, environment-specific configurations, and distributed tracing. Includes Docker readiness and Kubernetes compatibility for cloud-native deployment.',
+      tags: [Tag.JAVA, Tag.SPRINGBOOT],
+    },
   ];
 
   constructor() {}
