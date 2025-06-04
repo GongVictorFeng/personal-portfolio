@@ -136,6 +136,30 @@ export class ProjectService {
         'Comprehensive microservices implementation featuring: Spring Cloud Config (centralized configuration), Eureka service discovery, API Gateway with dynamic routing, and Resilience4j fault tolerance (Circuit Breaker, RateLimiter, Bulkhead). Demonstrates production-grade patterns including load balancing with Feign/RestTemplate, environment-specific configurations, and distributed tracing. Includes Docker readiness and Kubernetes compatibility for cloud-native deployment.',
       tags: [Tag.JAVA, Tag.SPRINGBOOT],
     },
+    {
+      id: 11,
+      name: 'Docker Fundamentals & Microservices Orchestration',
+      picture: '../../assets/docker_intro.png',
+      projectLink: 'https://github.com/GongVictorFeng/docker_intro',
+      url: '',
+      summary:
+        'Comprehensive Docker learning project with Spring Boot microservices orchestration.',
+      description:
+        'Educational repository covering Docker fundamentals including: image creation, multi-stage builds, layer caching optimizations, and Docker Compose for microservices orchestration. Features Spring Boot Maven plugin integration for containerization, Docker networking concepts, and practical implementations of production patterns like centralized configuration, service discovery, and distributed tracing with Zipkin. Includes docker-compose.yaml for multi-container management and demonstrates Docker deployment best practices across different environments.',
+      tags: [Tag.JAVA, Tag.SPRINGBOOT],
+    },
+    {
+      id: 12,
+      name: 'Kubernetes Fundamentals & Microservices Orchestration',
+      picture: '../../assets/kubernetes_intro.png',
+      projectLink: 'https://github.com/GongVictorFeng/kubernetes-intro',
+      url: '',
+      summary:
+        'Comprehensive Kubernetes learning project with GKE implementation for Spring Boot microservices.',
+      description:
+        'Hands-on Kubernetes implementation covering cluster management, declarative configuration, and production-grade orchestration features. Includes deployment of currency-exchange and currency-conversion microservices on Google Kubernetes Engine (GKE) with: auto-scaling (HPA and cluster), service discovery, LoadBalancer services, ConfigMaps, Secrets, and node pool management. Demonstrates rolling deployments, health checks, GPU node attachment, and declarative YAML configuration for zero-downtime deployments.',
+      tags: [Tag.JAVA, Tag.SPRINGBOOT],
+    },
   ];
 
   constructor() {}
