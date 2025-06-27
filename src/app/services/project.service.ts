@@ -75,7 +75,7 @@ export class ProjectService {
         'Practical implementations of design patterns and SOLID Principles.',
       description:
         'Growing Java reference demonstrating classic design patterns. Serves as both educational resource and personal pattern library for future projects.',
-      tags: [Tag.CSHARP, Tag.ASPNET],
+      tags: [Tag.JAVA],
     },
     {
       id: 6,
