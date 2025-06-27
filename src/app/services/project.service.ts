@@ -67,13 +67,14 @@ export class ProjectService {
     },
     {
       id: 5,
-      name: 'Design Patterns in C#',
+      name: 'Design Patterns in Java',
       picture: '../../assets/design_patterns.png',
-      projectLink: 'https://github.com/GongVictorFeng/DesignPattern',
+      projectLink: 'https://github.com/GongVictorFeng/Design-Patterns',
       url: '',
-      summary: 'Practical implementations of Gang of Four design patterns.',
+      summary:
+        'Practical implementations of design patterns and SOLID Principles.',
       description:
-        'Growing C# reference demonstrating 3+ classic design patterns (e.g., Singleton, Factory) with ASP.NET context. Serves as both educational resource and personal pattern library for future projects.',
+        'Growing Java reference demonstrating classic design patterns. Serves as both educational resource and personal pattern library for future projects.',
       tags: [Tag.CSHARP, Tag.ASPNET],
     },
     {
